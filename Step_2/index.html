@@ -5,24 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Connect The Dots</title>
   <link rel="stylesheet" href="main.css">
+  <link rel ="main" href="code.js">
 </head>
+
 <body>
-  <nav>
-    <a href="./index.html"></a>
-    <a href="./homepg.html">Home</a>
-     
-  </nav>
+
   <div class="game-container">
     <div class="message"></div>
     <div class = "grid" id="gameBoard"></div>
-    <div class = "score"> Score: 0</div>
-    <div class ="timer">Time: 00:00</div>
+    <div class = "timer"> timer: 00:00 </div>
+    <div class ="score">Score: 0</div>
+    <button id="startBtn">Start</button>
+  <button id="stopBtn" disabled>Stop</button>
   </div>
   <script src="code.js"></script>
 <div id="gridContainer"></div>
+
+
+  <nav>
+    <a href="./index.html"></a>
+    <a href="./homepg.html">Home</a>
+
+  </nav>
+
+  <div class="grid-container" id="container">
+    <div class="grid-item" onmousedown="mousedown(this)"><img src="bluedot.png" width= "80%" draggable="false"></div>
+    <div class="grid-item" onmouseenter="mouseenter(this)"><img width="80%" draggable="false" ></div>
+    <div class="grid-item" onmouseenter="mouseenter(this)"><img width="80%" draggable="false"></div>
+    <div class="grid-item" onmousedown="mousedown(this)"><img src="red dot.png" width="80%" draggable="false"></div>
+    <div class="grid-item" onmousedown="mousedown(this)"><img src="orangedot.png" width="80%" draggable="false"></div>
+    <div class="grid-item" onmouseenter="mouseenter(this)"><img width="80%" draggable="false"></div>
+    <div class="grid-item" onmouseenter="mouseenter(this)"><img width="80%" draggable="false"></div>
+    <div class="grid-item" onmouseenter="mouseenter(this)"><img width="80%" draggable="false"></div>
+    <div class="grid-item" onmousedown="mousedown(this)"><img src="yellowdot.png" width="80%" draggable="false"></div>
+    <div class="grid-item" onmouseenter="mouseenter(this)"><img width="80%" draggable="false"></div>
+    <div class="grid-item" onmouseenter="mouseenter(this)"><img width="80%" draggable="false"></div>
+    <div class="grid-item" onmouseenter="mouseenter(this)"><img width="80%" draggable="false"></div>
+    <div class="grid-item" onmousedown="mousedown(this)"><img src="yellowdot.png" width="80%" draggable="false"></div>
+    <div class="grid-item" onmouseenter="mouseenter(this)"><img width="80%" draggable="false"></div>
+    <div class="grid-item" onmouseenter="mouseenter(this)"><img width="80%" draggable="false"></div>
+    <div class="grid-item" onmouseenter="mouseenter(this)"><img width="80%" draggable="false"></div>
+    <div class="grid-item" onmousedown="mousedown(this)"><img src="red dot.png" width="80%" draggable="false"></div>
+    <div class="grid-item" onmousedown="mousedown(this)"><img src="orangedot.png" width="80%" draggable="false"></div>
+    <div class="grid-item" onmouseenter="mouseenter(this)"><img width="80%" draggable="false"></div>
+    <div class="grid-item" onmousedown="mousedown(this)"><img src="greendot.png" width="80%" draggable="false"></div>
+    <div class="grid-item" onmouseenter="mouseenter(this)"><img width="80%" draggable="false"></div>
+    <div class="grid-item" onmousedown="mousedown(this)"><img src="bluedot.png" width="80%" draggable="false"></div>
+    <div class="grid-item" onmousedown="mousedown(this)"><img src="greendot.png" width="80%" draggable="false"></div>
+    <div class="grid-item" onmouseenter="mouseenter(this)"><img width="80%" draggable="false"></div>
+    <div class="grid-item" onmouseenter="mouseenter(this)"><img width="80%" draggable="false"></div>
+
+
+  </div>
+
+<button>Score: 0</button>
+<button>Timer: 3:00 </button>
+
+
+
 </body>
 <html>
-
-
-
-
