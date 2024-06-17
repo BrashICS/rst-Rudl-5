@@ -88,4 +88,5 @@ function reset() {
 }
 
 
+console.log(document.getElementById("container").children);
 
