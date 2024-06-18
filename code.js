@@ -59,29 +59,29 @@ function mouseenter(e) {
   if(e.children[0].src != null && e.children[0].src != ""){
     console.log("im here")
     colour = e.children[0].src
-    if(colour == "https://sturdy-winner-7v7v9xgvjvqg29gg-3000.app.github.dev/bluedot.png"){
+    if(colour == "https://brashics.github.io/rst-Rudl-5/bluedot.png"){
       blue_connected = false;
       console.log("failed to")
 
 
-    }else if(colour == "https://sturdy-winner-7v7v9xgvjvqg29gg-3000.app.github.dev/red%20dot.png") {
+    }else if(colour == "https://brashics.github.io/rst-Rudl-5/red%20dot.png") {
         red_connected = false;
         console.log("failed to")
 
 
-    }else if(colour == "https://sturdy-winner-7v7v9xgvjvqg29gg-3000.app.github.dev/greendot.png") {
+    }else if(colour == "https://brashics.github.io/rst-Rudl-5/greendot.png") {
       greeen_connected = false;
       console.log("failed to")
 
 
 
-    }else if(colour == "https://sturdy-winner-7v7v9xgvjvqg29gg-3000.app.github.dev/orangedot.png") {
+    }else if(colour == "https://brashics.github.io/rst-Rudl-5/orangedot.png") {
       orange_connected = false;
       console.log("failed to")
 
 
 
-  }else if(colour == "https://sturdy-winner-7v7v9xgvjvqg29gg-3000.app.github.dev/yellowdot.png ") {
+  }else if(colour == "https://brashics.github.io/rst-Rudl-5/yellowdot.png ") {
     yellow_connected = false;}
     console.log("failed to")
 
@@ -121,27 +121,27 @@ function mouseup(e) {
   }
   console.log(currentSrc,"hello")
   if (first != end && e.children[0].src == currentSrc){
-    if(currentSrc == "https://sturdy-winner-7v7v9xgvjvqg29gg-3000.app.github.dev/bluedot.png"){
+    if(currentSrc == "https://brashics.github.io/rst-Rudl-5/bluedot.png"){
       blue_connected = true;
       currentSrc = null
       console.log("connected")
 
-    }else if(currentSrc == "https://sturdy-winner-7v7v9xgvjvqg29gg-3000.app.github.dev/red%20dot.png") {
+    }else if(currentSrc == "https://brashics.github.io/rst-Rudl-5/red%20dot.png") {
         red_connected = true;
         currentSrc = null
         console.log("connected")
 
-    }else if(currentSrc == "https://sturdy-winner-7v7v9xgvjvqg29gg-3000.app.github.dev/greendot.png") {
+    }else if(currentSrc == "https://brashics.github.io/rst-Rudl-5/greendot.png") {
       greeen_connected = true;
       currentSrc = null
       console.log("connected")
 
-    }else if(currentSrc == "https://sturdy-winner-7v7v9xgvjvqg29gg-3000.app.github.dev/orangedot.png") {
+    }else if(currentSrc == "https://brashics.github.io/rst-Rudl-5/orangedot.png") {
       orange_connected = true;
       currentSrc = null
       console.log("connected")
 
-  }else if(currentSrc == "https://sturdy-winner-7v7v9xgvjvqg29gg-3000.app.github.dev/yellowdot.png") {
+  }else if(currentSrc == "https://brashics.github.io/rst-Rudl-5/yellowdot.png") {
     yellow_connected = true;
     currentSrc = null
     console.log("connected")
