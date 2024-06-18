@@ -12,7 +12,7 @@ let yellow_connected = false;
 let orange_connected = false;
 
 
-//declaring the grid
+
 container=document.getElementById('container');
 
 grid_container = []
@@ -29,17 +29,26 @@ console.log(grid);
 
 document.onmouseup = reset
 
+const timerDisplay = document.getElementById('timer');
+const scoreDisplay = document.getElementById('score');
+const startBtn = document.getElementById('startBtn');
+const stopBtn = document.getElementById('stopBtn');
+
+let startTime;
+let elapsedTime = 0;
+let intervalId;
+let score = 0;
 
 
 const gridContaner = document.querySelector(".grid");
 
-//Don't know it's purpose as te grid function is already declared, too scred to remove it and too lazy to see if any changes occur.
+
 function createGrid() {
 const grid = document.getElementById("div");
 grid.classList.add("grid-item");
 }
 
-//This function is needed for the dragging feature and is gets the information of the box that was clicked on
+
 function mousedown(e) {
   console.log("hello");
   MD = true;
@@ -53,7 +62,6 @@ function mousedown(e) {
   console.log(currentSrc)
 }
 
-// When the mouse enters a box, this function checks if this box already has a colour and deletes the trail of colour and colours the box
 function mouseenter(e) {
   if(e.children[0].src != null || e.children[0].src != ""){
     colour = e.children[0].src
@@ -100,7 +108,7 @@ console.log(document.getElementById("container").children);
 
 
 
-//This function is only activated when the user releases on the origin boxes; also checks if game is won.
+
 function mouseup(e) {
   console.log("Marvel");
   for (let i = 0; i < gridT.length;i++){
@@ -146,7 +154,7 @@ if (blue_connected && red_connected && yellow_connected && orange_connected && g
 
 }
 
-//This checks if the user failed to connect; will erase the trail of colours.
+
 function mouseupalt(e) {
   console.log("failed")
   for(let boxes = 0; boxes < gridT.length; boxes++) {

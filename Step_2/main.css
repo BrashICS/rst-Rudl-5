@@ -31,6 +31,7 @@ margin: 70px auto;
 
 
 
+
 .box {
   background-color: lightgrey;
   color: #fff;
@@ -41,17 +42,11 @@ margin: 70px auto;
 
 
 
-
 .selected {
   background-color:black;
 }
 
-#timer {
-  font-size: 20px
-}
-#score {
-  font-size: 18px
-}
+
 .message {
   margin-top: 20px;
   font-size: 18px;
@@ -68,33 +63,7 @@ body {
   text-align: center;
 }
 
-#timer, #score {
-  font-size: 2em;
-  margin: 20px;
-}
 
-button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 10px;
-}
-
-#startBtn {
-  background-color: green;
-  color: white;
-}
-
-#stopBtn {
-  background-color: red;
-  color: white;
-}
-
-#stopBtn:disabled {
-  opacity: 0.5;
-  cursor: default;
-}
 
 
 .grid-item {
@@ -103,10 +72,14 @@ button {
   cursor: default;
 }
 
+
+
 .grid-item:hover {
   background-color: #ccc;
   cursor: pointer;
 }
+
+
 
 .dragging {
   background-color: lightblue;
